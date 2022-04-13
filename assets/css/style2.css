@@ -1,0 +1,239 @@
+html {
+    background-color: black;
+}
+body{
+    min-width: 1440px;
+    max-width: 1920px;
+    margin: auto !important;
+    background-color: white;
+    padding: 50px;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+                                            /*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1540px;
+}
+header ul {
+    display:flex;
+    flex-direction: row;
+}
+header li {
+    display: flex;
+    justify-self:auto ;
+    margin: 10px;
+}
+                                            /*fin_header*/
+                                            /*search_bar*/
+#search_bar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#search_nav {
+    display: flex;
+    }
+    #filtres {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+                                                /*fin_search_bar*/
+                                                /*Filtres*/
+#filtre h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#filtres ul {
+    display: flex;
+    align-self: flex-start;
+    flex-wrap: nowrap;
+    margin-left: 60px;
+    margin-top: -50px;
+}
+#filtres li { /*texte + logo*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border:2px solid #f2f2f2;
+    height: 40px;
+    border-radius: 30px;
+    margin-right: 20px;
+    padding-right: 20px;
+    flex-wrap: nowrap
+}
+.fa-money { 
+    padding: 12px;
+    margin-left: -2px;
+    color: #0065FC;
+    background-color: rgb(193, 197, 250);
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.fa-heart {
+    padding: 11px;
+    margin-left: -2px;
+    color: #0065FC;
+    background-color: rgb(193, 197, 250);
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.fa-dog {
+    padding: 12px;
+    color: #0065FC;
+    background-color: rgb(193, 197, 250);
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.fa-child-reaching {
+    padding: 21px;
+    margin-left: -2px;
+    color: #0065FC;
+    background-color: rgb(193, 197, 250);
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#filtres p i {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #f2f2f2;
+    border-radius: 30px;
+    color: #DEEBFF;
+}
+#filtres p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color:#8f8585;
+}
+                                                /*fin_filtres*/
+                                                /*hebergement_à_marseille*/
+#hebergement_a_marseille {          /*section entière*/
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2 ;
+    border-radius: 30px ;
+    max-width: 70%;
+    min-width: 1170px;
+    width: 1175px;
+    height: 840px;
+}
+h3 {
+    transform: translate(20px, 0px);
+}
+figure p {
+    transform: translate(20px, -30px);
+}
+#fa-star {
+    display: flex;
+    transform: translate(-20px, -55px);
+}
+
+#hebergement_a_marseille img {
+    width: 300px;
+    height: 150px;
+    border: 4px rgb(252, 252, 252) solid;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+}
+
+#hebergement_a_marseille figcaption {
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    height: 105px;
+}
+
+#hebergement_a_marseille h2 {
+    max-height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    transform: translate(50px, 50px);
+    font-size: 30px;
+}
+#ham_all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    transform: translate(0px, 70px);
+}
+#afficher-plus {
+    display: flex;
+    transform: translate(50px, 100px);
+    font-size: 25px;
+    color: black;
+}
+                                                /*les plus populaires*/
+
+#most-popular {
+    margin-left: 40px;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2 ;
+    border-radius: 30px ;
+    height: 840px;
+    max-width: 560px;
+    min-width: 430px;
+}
+#most-popular img {
+    width: 170px;
+    height: 180px;
+    border: 4px rgb(252, 252, 252) solid;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+}
+#most-popular figcaption {
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    width: 285px;
+}
+#most-popular figure {
+    display: flex;
+    transform: translate(0px, 110px);
+}
+
+#titre {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+#logement {
+    display: flex;
+}
+#mp_all {
+    display: flex;
+}
+@media screen and (max-width: 1440px) {
+    #most-popular
+	{
+        display: none;
+	}
+}
