@@ -13,8 +13,11 @@ body{
     max-width: 1440px;
     margin: auto !important;
     background-color: white;
-    padding: 50px;
+    /*padding: 50px;*/
     width: 70%;
+}
+main {
+    padding: 50px;
 }
 li {
     list-style: none;
@@ -306,12 +309,11 @@ header li {
     border-bottom-right-radius: 30px;
     box-shadow: 0px 3px 10px grey;
 }
-@media screen and (max-width: 1440px) {
+/*@media screen and (max-width: 1440px) {
     #most-popular
 	{
         display: none;
-	}
-}
+	}*/
 footer {
     display: flex;
     justify-content: space-around;
