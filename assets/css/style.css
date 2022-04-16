@@ -8,6 +8,9 @@ html {
     margin: 0;
     padding: 0;
 }
+input {
+    border: 2px solid #F2F2F2;
+}
 body{
     min-width: 1440px;
     max-width: 1440px;
@@ -30,6 +33,12 @@ header {
     display: flex;
     justify-content: space-between;
 }
+header a:hover {
+    border-top: 3px solid blue;
+}
+header img {
+    font-size: 15px;
+}
 header ul {
     display:flex;
     flex-direction: row;
@@ -40,6 +49,18 @@ header li {
     margin: 10px;
 }
                                             /*search_bar*/
+#gps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
 #search_bar {
     display: flex;
     flex-wrap: wrap;
@@ -48,6 +69,17 @@ header li {
 #search_nav {
     display: flex;
     margin-top: 15px;
+}
+.button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: blue;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
                                             /*Filtres*/
 #filtres {
@@ -145,6 +177,14 @@ header li {
     justify-content: center;
     align-items: center;
 }
+.button span {
+    color: white;
+    font-size: 20px;
+}
+figcaption p, h3 {
+    color:black;
+
+}
                                             /*hebergement_à_marseille*/
 
 #hebergement_a_marseille {
@@ -185,7 +225,7 @@ header li {
     background-color: rgb(255, 255, 255);
     width: 90%;
     height: 90px;
-    padding: 15px;
+    padding: 5px;
 }
 
 #hebergement_a_marseille h2 {
@@ -198,6 +238,9 @@ header li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+#ham_all figure {
+    margin: 10px;
 }
 #afficher-plus {
     display: flex;
@@ -237,6 +280,9 @@ header li {
     height: 180px;
     padding: 15px;
 }
+#most-popular h3 {
+    font-size: 20px;
+}
 #most-popular figure {
     display: flex;
 }
@@ -256,13 +302,14 @@ header li {
     width: 100%;
 }
                                             /*activités à marseille*/
-                                            #activite {
-                                                width: 100%;
-                                                display: flex;
-                                                justify-content: space-evenly;
-                                                flex-direction: column;
-                                                margin-top: 50px;
-                                            }
+
+#activite {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 50px;
+}
 #activite h2 {
     height: 30px;
     font-size: 30px;
@@ -290,12 +337,19 @@ header li {
     border-top-right-radius: 30px;
 }
 #activite .img2 {
-    height: 178px;
+    height: 170px;
     width: 100%;
     object-fit: cover;
     border: 4px rgb(252, 252, 252) solid;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+}
+.img-2 {
+    display: flex;
+    flex-direction: column;
+}
+.img-2 article {
+    margin: 5px;
 }
 #aam {
     display: flex;
@@ -309,11 +363,6 @@ header li {
     border-bottom-right-radius: 30px;
     box-shadow: 0px 3px 10px grey;
 }
-/*@media screen and (max-width: 1440px) {
-    #most-popular
-	{
-        display: none;
-	}*/
 footer {
     display: flex;
     justify-content: space-around;
@@ -326,3 +375,10 @@ footer div {
     justify-content: space-evenly;
     height: 100px;
 }
+
+/*
+@media screen and (max-width: 1440px) {
+    #most-popular
+	{
+        display: none;
+}*/
