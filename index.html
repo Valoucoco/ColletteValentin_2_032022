@@ -27,8 +27,10 @@
     <main>
       <!--dessous la barre de recherche-->
       <section id="search_bar">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
+        <div>
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <p>En plein centre ville ou en pleine nature</p>
+        </div>
         <form>
           <label for="search"><i class="fa-solid fa-location-dot"></i></label>
           <input
@@ -45,12 +47,11 @@
       </section>
       <!--navigation par filtres-->
       <section id="filters">
-        <div>
         <h2>Filtres</h2>
         <ul>
           <li>
             <a href="#"
-              ><i class="fa fa-money" aria-hidden="true"></i><strong>Économie</strong></a
+              ><i class="fa fa-money" aria-hidden="true"></i><strong>Économique</strong></a
             >
           </li>
           <li>
@@ -70,10 +71,9 @@
             >
           </li>
         </ul>
-        </div>
         <p>
-          <i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles
-          dans cette ville
+          <i class="fa-solid fa-info"></i><span>Plus de 500 logements sont disponibles
+          dans cette ville</span>
         </p>
       </section>
       <div id="accomodation-popular">
@@ -101,8 +101,8 @@
             </a>
           </article>
           <article>
-            <a href="#"
-              ><figure>
+            <a href="#">
+              <figure>
                 <img
                   src="./assets/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                   alt="Hôtel du port, une chambre 5 étoiles, clair et lumineuse, climatisée avec deux lits complets pour une personne, des serviettes de bain et une fenêtre"
@@ -117,7 +117,8 @@
                     <li><i class="fa-solid fa-star active"></i></li>
                     <li><i class="fa-solid fa-star active"></i></li>
                   </ul>
-                </figcaption></figure
+                </figcaption>
+              </figure
             ></a>
           </article>
           <article>
@@ -376,31 +377,31 @@
       src="https://kit.fontawesome.com/ac612d1b0f.js"
       crossorigin="anonymous"
     ></script>
-    <footer>
-      <div>
-        <div>
-          <h4>A propos</h4>
-          <ul>
-            <li><a href="#">Fonctionnement du site</a></li>
-            <li><a href="#">Conditions général de vente</a></li>
-            <li><a href="#">Données et confidentialité</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Nos hébergements</h4>
-          <ul>
-            <li><a href="#">Charte qualité</a></li>
-            <li><a href="#">Soumettre votre hôtel</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Assistance</h4>
-          <ul>
-            <li><a href="#">Centre d'aide</a></li>
-            <li><a href="#">Nous contacter</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
   </body>
+  <footer>
+    <div>
+      <div>
+        <h4>A propos</h4>
+        <ul>
+          <li><a href="#">Fonctionnement du site</a></li>
+          <li><a href="#">Conditions général de vente</a></li>
+          <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Nos hébergements</h4>
+        <ul>
+          <li><a href="#">Charte qualité</a></li>
+          <li><a href="#">Soumettre votre hôtel</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Assistance</h4>
+        <ul>
+          <li><a href="#">Centre d'aide</a></li>
+          <li><a href="#">Nous contacter</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </html>
