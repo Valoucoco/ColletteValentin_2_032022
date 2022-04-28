@@ -5,13 +5,11 @@
   margin: 0;
   padding: 0;
 }
-html {
-  width: 1440px;
-}
 header, main, footer > div {
   margin: auto !important;
-  width: 1365px;
+  max-width: 1180px;
 }
+
 li {
   list-style: none;
 }
@@ -23,6 +21,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+header li {
+  border-top: 3px solid white;
 }
 header li:hover {
   border-top: 3px solid #0065FC;
@@ -72,6 +73,12 @@ header nav ul li {
   border: 2px solid #f2f2f2;
   height: 50px;
   width: 237px;
+  padding-left: 17px;
+}
+#search_bar input::placeholder {
+  font-weight: bold;
+  opacity: 1;
+  color: black;
 }
 #search_bar form {
   display: flex;
@@ -94,22 +101,23 @@ header nav ul li {
   display: none;
 }
 /*Filters*/
-#filters > div {
-  display: flex;
-  align-items: center;
-  height: 55px;
-  justify-content: space-around;
-  width: 70%;
-  font-size: 1.1em;
+#filters {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
-#filters div h2 {
+#filters h2 {
   font-size: 1em;
+  margin-right: 1em;
 }
 #filters ul {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 #filters li {
-  margin: 17px;
+  margin-right: 17px;
 }
 #filters li a {
   border: 2px solid #f2f2f2;
@@ -122,13 +130,13 @@ header nav ul li {
   padding-right: 10px;
 }
 #filters div ul li strong {
-  margin-right: 15px;
+  padding: 0 15px;
 }
 #filters p {
   display: flex;
+  flex-basis: 100%;
   align-items: center;
-  font-size: 1em;
-  height: 90px;
+  margin: 20px 0;
 }
 #filters ul li a > i {
   display: flex;
@@ -149,9 +157,9 @@ header nav ul li {
   border: 2px solid #f2f2f2;
   border-radius: 30px;
   font-size: 0.8em;
-  margin: 15px;
   justify-content: center;
   align-items: center;
+  margin-right: 15px;
 }
 .button span {
   color: white;
@@ -162,23 +170,29 @@ h3 {
   color: black;
   font-size: 1.0em;
 }
+/*Accomodation-popular*/
+#accomodation-popular {
+  display: flex;
+  justify-content: space-between;
+}
 /*hebergement_à_marseille*/
 #accomodation {
   display: flex;
   flex-wrap: wrap;
   background-color: #f2f2f2;
   border-radius: 30px;
-  width: 65%;
-  height: 625px;
+  flex-basis: 65%;
   justify-content: space-evenly;
-  padding: 20px;
+  padding: 25px;
 }
 #accomodation h2 {
-  width: 100%;
+  flex-basis: 100%;
   font-size: 1.2em;
+  margin-bottom: 25px;
 }
 #accomodation article {
-  width: 30%;
+  flex-basis: 31%;
+  margin-bottom: 25px;
 }
 #accomodation figure {
   display: flex;
@@ -211,12 +225,6 @@ h3 {
 #accomodation figcaption ul .active{
   color: #0065FC;
 }
-/*Accomodation-popular*/
-#accomodation-popular {
-  display: flex;
-  justify-content: space-between;
-  height: 550px;
-}
 
 #afficher-plus {
   display: flex;
@@ -230,7 +238,7 @@ h3 {
   display: flex;
   padding: 20px;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   border-radius: 20px;
 }
 #most-popular article {
@@ -334,13 +342,14 @@ footer {
 }
 footer > div {
   display: flex;
+  flex-basis: 100%;
   justify-content: flex-start;
 }
-footer div:nth-child(1), footer div:nth-child(2), footer div:nth-child(3)  {
-  width: 80%;
+footer div div {
+  flex-basis: 33%;
 }
 
-/*media queries*/
+/*
 @media screen and (max-width: 768px) {
   html {
     width: 700px;
@@ -493,4 +502,4 @@ footer div:nth-child(1), footer div:nth-child(2), footer div:nth-child(3)  {
 
 #activities, footer {
   display: none;
-}
+}*/
