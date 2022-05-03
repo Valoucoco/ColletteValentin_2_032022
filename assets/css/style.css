@@ -345,7 +345,6 @@ h3 {
 /*footer*/
 footer {
   display: flex;
-  height: 150px;
   background-color: #f2f2f2;
 }
 footer > div {
@@ -356,8 +355,6 @@ footer > div {
 footer div div {
   flex-basis: 33%;
 }
-
-/*
 @media screen and (max-width: 768px) {
   html {
     width: 700px;
@@ -441,7 +438,7 @@ footer div div {
 }
 #most-popular {
   background-color: #f2f2f2;
-  width: 33%;
+  width: 60%;
   display: flex;
   padding: 20px;
   flex-direction: column;
@@ -458,19 +455,23 @@ footer div div {
   align-items: center;
   background-color: white;
 }
+#accomodation img {
+  height: 140px;
+}
 #accomodation h2 {
-  width: 30%;
-  font-size: 1.4em;
+  width: 60%;
+  font-size: 1.6em;
   margin: 20px;
 }
 #accomodation article {
   margin: 10px;
+  width: 60%;
 }
 #accomodation #afficher-plus {
   display: flex;
   font-size: 25px;
   color: black;
-  width: 30%;
+  width: 60%;
   align-items: center;
   justify-content: flex-start;
   font-size: 1.3em;
@@ -478,7 +479,7 @@ footer div div {
 #activities h2 {
   display: flex;
   justify-content: center;
-  width: 87%;
+  width: 70%;
 }
 #activities #articles .img2 article, #activities #articles article {
   margin: 25px 0px 0px 0px;
@@ -490,7 +491,7 @@ footer div div {
   height: 100%;
 }
 #activities #articles > div {
-  width: 30%;
+  width: 60%;
   display: flex;
   flex-direction: column;
 }
@@ -505,9 +506,17 @@ footer div div {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+footer > div {
+  display: flex;
+  flex-basis: 58%;
+  flex-direction: column;
+  align-items: flex-start;
 }
-
-
-#activities, footer {
-  display: none;
-}*/
+footer div div {
+  flex-basis: 33%;
+  margin: 20px 0;
+}
+footer div div ul li {
+    margin: 10px 0;
+}
+}
