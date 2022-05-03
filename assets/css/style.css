@@ -15,18 +15,13 @@ li {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 /*header*/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-header li {
-  border-top: 3px solid white;
-}
-header li:hover {
-  border-top: 3px solid #0065FC;
 }
 header img {
   height: 50px;
@@ -48,6 +43,14 @@ header nav ul li {
   height: 100%;
   align-items: center;
   justify-content: center;
+  border-top: 3px solid white;
+  color: black;
+}
+header li:hover {
+  border-top: 3px solid #0065FC;
+}
+header nav ul li a:hover {
+  color: #0065FC;
 }
 /*search_bar*/
 #search_bar {
@@ -298,7 +301,7 @@ h3 {
   border-bottom-left-radius: 20px;
 }
 #activities {
-  margin-top: 20px;
+  margin: 40px 0px;
 }
 #activities h2 {
   margin: 20px; 
