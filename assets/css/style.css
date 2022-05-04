@@ -137,60 +137,15 @@ header nav ul li a:hover {
   padding-right: 10px;
   height: 100%;
 }
-#filters ul li a {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-#filters ul li a i {
-  position: relative;
-  transition: 0.3s;
-  z-index: 3;
-}
-#filters ul li a:hover strong {
-  z-index: 4;
-  color: white;
-  transition: 0.5s;
-}
 #filters ul li:hover {
   border-radius: 30px;
   box-shadow: 0 0 20px #336fca;
-  transition: 0.3s;
-}
-#filters ul li a:hover i {
-  transform: rotateY(360deg);
-  transition: 8s;
-}
-#filters ul li a:before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.3s;
-  z-index: 2;
-}
-#filters ul li a:hover {
-  border: none;
-}
-#filters ul li a:hover:before {
-  top: 0;
-}
-#filters ul li:nth-child(1) a:before {
   background-color: #336fca;
+  color: white;
   transition: 0.3s;
 }
-#filters ul li:nth-child(2) a:before {
-  background-color: #336fca;
-  transition: 0.3s;
-}
-#filters ul li:nth-child(3) a:before {
-  background-color: #336fca;
-  transition: 0.3s;
-}
-#filters ul li:nth-child(4) a:before {
-  background-color: #336fca;
+#filters ul li a:hover strong {
+  color: white;
   transition: 0.3s;
 }
 #filters ul li a > i {
@@ -428,62 +383,45 @@ footer div div ul li {
   margin-bottom: 10px;
 }
 /*tablette*/
-@media (min-width: 768px) and (max-width: 992px) {
-  #search_bar {
-    margin: 15px;
-  }
-  #filters {
+@media (max-width: 992px) {
+  main {
     margin: 15px;
   }
   #accomodation-popular {
     flex-direction: column-reverse;
-    margin: 15px;
   }
+
+
+  /*DEBUT DE MODIF*/
   #most-popular {
-    width: 90%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 15px 0;
+    width: 100%;
+    margin-bottom: 50px;
   }
   #most-popular h2 {
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 100%;
     margin: 10px 0;
   }
   #most-popular article {
     display: flex;
-    flex-basis: 50%;
-  }
+    justify-content: space-around;
+}
   #accomodation {
-    width: 90%;
-  }
-  #accomodation article {
-    flex-basis: 45%;
-    margin-bottom: 25px;
+    width: 100%;
   }
   #activities #articles {
     flex-direction: column;
   }
   #activities #articles > div {
     width: 90%;
-    margin: 15px;
   }
   #activities #articles article img {
     max-height: 150px;
   }
 }
 @media screen and (max-width: 768px) {
-  html {
-    width: 700px;
-  }
   header {
     flex-direction: column;
   }
   header > nav {
-    width: 500px;
-  }
-  header nav ul {
     width: 100%;
   }
   header li {
@@ -540,8 +478,14 @@ footer div div ul li {
     flex-direction: column-reverse;
   }
   #most-popular {
-    background-color: #f2f2f2;
-    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+  #most-popular h2 {
+    justify-content: space-evenly;
+  }
+  #most-popular figcaption {
+    width: 250px;
   }
   #accomodation {
     flex-direction: column;
