@@ -29,7 +29,7 @@ header img {
   height: 50px;
 }
 header nav {
-  flex-basis: 30%;
+  flex-basis: 25%;
 }
 header nav ul {
   display: flex;
@@ -175,7 +175,7 @@ header nav ul li a:hover {
 #filters p {
   display: flex;
   flex-basis: 100%;
-  align-items: baseline;
+  align-items: center;
   margin: 20px 0;
 }
 .button span {
@@ -366,7 +366,7 @@ h3 {
 footer {
   display: flex;
   background-color: #f2f2f2;
-  padding: 30px 30px;
+  padding: 20px 0;
 }
 footer > div {
   display: flex;
@@ -385,7 +385,7 @@ footer div div ul li {
 /*tablette*/
 @media (max-width: 992px) {
   main {
-    margin: 15px !important;
+    margin: 15px;
   }
   #accomodation-popular {
     flex-direction: column-reverse;
@@ -402,14 +402,16 @@ footer div div ul li {
     display: flex;
     justify-content: space-around;
 }
-#most-popular article a {
-  width: 100%;
-}
+  #most-popular article a{
+  }
   #accomodation {
     width: 100%;
   }
   #activities #articles {
     flex-direction: column;
+  }
+  #activities #articles > div {
+    width: 90%;
   }
   #activities #articles article img {
     max-height: 150px;
@@ -423,21 +425,22 @@ footer div div ul li {
     width: 100%;
   }
   header li {
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 5px solid #f2f2f2;
   }
   header nav ul li {
     width: 50%;
   }
   header li:hover {
-    border-bottom: 2px solid #0065fc;
+    border-bottom: 5px solid #0065fc;
     border-top: none;
   }
   #search_bar h1 {
     font-size: 1.4em;
   }
+
   #search_bar form {
-    margin-top: 30px;
-}
+    margin: 30px;
+  }
   #search_bar button .fa-magnifying-glass {
     display: contents;
   }
@@ -449,10 +452,11 @@ footer div div ul li {
     margin: 20px;
   }
   #filters h2 {
-    margin-bottom: 20px;
+    width: 320px;
+    height: 40px; 
   }
-  #most-popular {
-    border-radius: 0px;
+  #filters p {
+    align-items: baseline;
   }
   #accomodation {
     flex-direction: column;
@@ -465,6 +469,12 @@ footer div div ul li {
   #accomodation h2 {
     font-size: 1.6em;
   }
+  #accomodation article {
+    width: 60%; /*non ça prend tout la largeur*/
+  }
+  #accomodation #afficher-plus {
+    width: 60%; /*non ça prend tout la largeur*/
+  }
   #activities h2 {
     display: flex;
     justify-content: center;
@@ -475,7 +485,7 @@ footer div div ul li {
     align-items: center;
   }
   #activities #articles > div {
-    width: 90%;
+    width: 60%;
     display: flex;
     flex-direction: column;
   }
@@ -491,9 +501,11 @@ footer div div ul li {
     border-top-right-radius: 20px;
   }
   footer > div {
+    flex-basis: 58%; /*non ça prend tout la largeur*/
     flex-direction: column;
   }
   footer div div {
+    flex-basis: 33%; /*On l'a déjà dit et puis là ce serait plutot 100%*/
     margin: 20px 0;
   }
   footer div div ul li {
