@@ -51,7 +51,7 @@ header nav ul li {
 header li:hover {
   border-top: 3px solid #0065fc;
 }
-header nav ul li a:hover {
+header nav ul li:hover a {
   color: #0065fc;
 }
 /*search_bar*/
@@ -137,16 +137,8 @@ header nav ul li a:hover {
   padding-right: 10px;
   height: 100%;
 }
-#filters ul li:hover {
-  border-radius: 30px;
-  box-shadow: 0 0 20px #336fca;
-  background-color: #336fca;
-  color: white;
-  transition: 0.3s;
-}
-#filters ul li a:hover strong {
-  color: white;
-  transition: 0.3s;
+#filters ul li:hover a{
+  background-color: #deebff;
 }
 #filters ul li a > i {
   display: flex;
@@ -314,53 +306,54 @@ h3 {
   border-bottom-left-radius: 20px;
 }
 /*activités à marseille*/
-#activities #articles > div {
-  flex-basis: 23%;
-}
-
 #activities {
   margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#activities > div {
+  flex-basis: 23%;
+  height: 380px;
+}
+#activities > div article,
+#activities > div article a,
+#activities > div article a figure {
+  height: 100%;
+}
+#activities div:nth-of-type(2) article:nth-of-type(1),
+#activities div:nth-of-type(4) article:nth-of-type(2) {
+  height: 55%;
+}
+#activities div:nth-of-type(2) article:nth-of-type(2),
+#activities div:nth-of-type(4) article:nth-of-type(1) {
+  height: 37%;
 }
 #activities h2 {
   margin: 20px 0;
+  flex-basis: 100%;
   font-size: 1.2em;
 }
 #activities figcaption {
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  width: 100%;
-  height: 50px;
+  flex: 0 0 50px;
   padding: 15px;
-  margin-top: -10px;
 }
 #activities article figure {
   height: 100%;
 }
 #activities img {
   width: 100%;
-  border-style: none;
+  height: 100%;
+  max-width: 100%;
+  overflow-y: hidden;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
-  max-height: 170px;
 }
 #activities article {
   border-radius: 20px;
   box-shadow: 0px 3px 10px grey;
   margin-bottom: 40px;
-}
-#activities div:nth-child(1) article,
-#activities div:nth-child(3) article {
-  height: 92%;
-}
-#activities div:nth-child(1) article img,
-#activities div:nth-child(3) article img {
-  height: 92%;
-  max-height: 425px;
-}
-#activities #articles {
-  display: flex;
-  justify-content: space-between;
 }
 /*footer*/
 footer {
