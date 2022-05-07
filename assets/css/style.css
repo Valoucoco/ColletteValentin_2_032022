@@ -312,14 +312,21 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+#activities h2 {
+  margin: 20px 0;
+  flex-basis: 100%;
+  font-size: 1.2em;
+}
 #activities > div {
   flex-basis: 23%;
   height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-#activities > div article,
-#activities > div article a,
-#activities > div article a figure {
-  height: 100%;
+#activities article {
+  border-radius: 20px;
+  box-shadow: 0px 3px 10px grey;
 }
 #activities div:nth-of-type(2) article:nth-of-type(1),
 #activities div:nth-of-type(4) article:nth-of-type(2) {
@@ -329,17 +336,15 @@ h3 {
 #activities div:nth-of-type(4) article:nth-of-type(1) {
   height: 37%;
 }
-#activities h2 {
-  margin: 20px 0;
-  flex-basis: 100%;
-  font-size: 1.2em;
-}
-#activities figcaption {
-  flex: 0 0 50px;
-  padding: 15px;
+#activities > div article,
+#activities > div article a,
+#activities > div article a figure {
+  height: 100%;
 }
 #activities article figure {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 #activities img {
   width: 100%;
@@ -350,10 +355,9 @@ h3 {
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-#activities article {
-  border-radius: 20px;
-  box-shadow: 0px 3px 10px grey;
-  margin-bottom: 40px;
+#activities figcaption {
+  flex: 0 0 50px;
+  padding: 15px;
 }
 /*footer*/
 footer {
