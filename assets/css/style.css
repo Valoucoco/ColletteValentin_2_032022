@@ -76,13 +76,15 @@ header nav ul li:hover a {
   background-color: #f2f2f2;
   height: 50px;
   width: 50px;
+  min-width: 50px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 #search_bar input {
   border: 2px solid #f2f2f2;
   height: 50px;
-  width: 237px;
+  width: 100%;
+  max-width: 250px;
   padding-left: 17px;
 }
 #search_bar input::placeholder {
@@ -159,6 +161,7 @@ header nav ul li:hover a {
   display: flex;
   height: 30px;
   width: 30px;
+  min-width: 30px;
   color: #0065fc;
   border: 3px solid #f2f2f2;
   border-radius: 30px;
@@ -261,6 +264,7 @@ h3 {
 #most-popular img {
   width: 130px;
   height: 120px;
+  min-width: 130px;
   object-fit: cover;
   border: 4px rgb(252, 252, 252) solid;
   border-top-left-radius: 20px;
@@ -303,7 +307,7 @@ h3 {
 }
 #activities > div {
   flex-basis: 23%;
-  height: 380px;
+  height: 415px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
